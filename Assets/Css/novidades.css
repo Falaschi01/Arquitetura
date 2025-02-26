@@ -1,0 +1,41 @@
+.novidades-arq .titulo-novidades {
+    margin-top: 5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+.novidades-arq .novidades{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 1rem; 
+    
+}
+.novidades .links-nov {
+    display: flex;
+    min-height: 2.5rem;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1rem);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+.novidades a {
+    font-size: 0.9rem;
+    color: #4a4a4a;
+}
+.novidades span {
+    transform: rotate(-45deg);
+}
+.links-nov:hover {
+    transition:  0.4s ease-in-out;
+    transform: scale(1.1)
+}
+.novidades p:hover {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.692);
+}
