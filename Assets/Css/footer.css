@@ -15,15 +15,21 @@ footer .container {
     gap: 1rem;
     font-weight: 700;
 }
+.rodape .titulo-rodape{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
 .rodape h3 {
     font-size: 1.3rem;
     margin-top: 1rem;
 }
 .rodape h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .rodape p{
-    color: #069206;
+    color: #fff;
     font-size: 1rem;
 }
 .rodape .deficiencia{
@@ -51,6 +57,65 @@ footer .container {
     background: #000;
 }
 .rede-sociais img:hover {
-    transition:  0.4s ease-in-out;
-    transform: scale(1.1)
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.678);
+    transform: translateY(-0.1rem) scale(1.01);
+    transition: 0.5s;
+}
+
+/*RESPONSIVIDADE 414PX*/
+@media screen and (min-width: 414px) {
+    .rodape h3 {
+        font-size: 1.5rem;
+    }
+    .rodape h4 {
+        font-size: 1.5rem;
+    }
+}
+/*RESPONSIVIDADE 480PX*/
+@media screen and (min-width: 480px) {
+    .rodape h3, h4 {
+        font-size: 1.6rem;
+    }  
+    .rodape h4 {
+        font-size: 1.6rem;
+    } 
+}
+/*RESPONSIVIDADE 768PX*/
+@media screen and (min-width: 768px) {
+    .rodape h3, h4  {
+        font-size: 1.7rem;
+    }
+    .rodape h4 {
+        font-size: 1.7rem;
+    }
+}
+/*RESPONSIVIDADE 1025PX*/
+@media screen and (min-width: 1025px){
+    .rodape h3  {
+        font-size: 1.8rem;
+    }
+    .rodape h4 {
+        font-size: 1.8rem;
+    }
+}
+/*RESPONSIVIDADE 1281PX*/
+@media screen and (min-width: 1281px) {
+    .rodape h3  {
+        font-size: 1.9rem;
+    }
+    .rodape h4 {
+        font-size: 1.9rem;
+    }
+}
+/*RESPONSIVIDADE 1367PX*/
+@media screen and (min-width: 1367px) {
+    .rodape h3  {
+        font-size: 2rem;
+    }
+    .rodape h4 {
+        font-size: 2rem;
+    }
+    .deficiencia span {
+        font-size: 1rem;
+    }
 }

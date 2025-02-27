@@ -6,37 +6,113 @@
     object-fit: cover;
     background-size: cover;
 }
-.main .titulo-main {
+.main .caixa-principal {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #FAF3E0;
+    flex-direction: column;
 }
-.titulo-main .titulo {
+.caixa-principal .foto-perfil {
     display: flex;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
     width: 100%;
+    gap: 1rem;
 }
-.titulo-main .sobre-titulo{
-    display: flex;
-    justify-content: end;
-    align-items: end;
+.foto-perfil img {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%; 
+    animation: flutuar 5s ease-in-out infinite; 
+}
+.foto-perfil h1 {
+    animation: digitando 2s steps(22), piscando 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.2rem solid;
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8);
+}
+.caixa-principal .caixa-mim{
+    height: 30%;
     width: 100%;
-    height: 50%;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.titulo-main .titulo h1 {
-    color: #F5FFFA;
-    font-size: 1.3rem;
-    font-weight: 700;
+.caixa-mim .sobre-mim {
+    border: 1px solid rgba(255, 255, 255, 0.425);
+    border-radius: 0.3rem;
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(0.1rem);
 }
-.titulo-main p {
-    color: #F5FFFA;
-    font-size: 1.3rem;
-    font-weight: 700;
-}
-.titulo-main span {
-    color: #0B610B;
+.sobre-mim p {
+    padding: 0 0.3rem;
 }
 
+/*EFEITOS COM KEYFRAMES*/
+
+/*IMAGEM FLUTUANDO*/
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+/*IMAGEM DIGITANDO*/
+@keyframes digitando {
+    from { width: 0; }
+    to { width: 70%; }
+}
+/*IMAGEM PISCANDO*/
+@keyframes piscando {
+    50% { border-color: transparent; }
+}
+/*RESPONSIVIDADE 481PX*/
+@media screen and (min-width: 481px){
+    @keyframes digitando {
+        from { width: 0; }
+        to { width: 50%; }
+    }
+}
+/*RESPONSIVIDADE 768PX*/
+@media screen and (min-width: 768px) {
+    .foto-perfil img {
+        margin-top: 10rem; 
+    }
+    @keyframes digitando {
+        from { width: 0; }
+        to { width: 30%; }
+    }
+}
+/*RESPONSIVIDADE 1025PX*/
+@media screen and (min-width: 1025px){
+    @keyframes digitando {
+        from { width: 0; }
+        to { width: 27%; }
+    }
+}
+/*RESPONSIVIDADE 1281PX*/
+@media screen and (min-width: 1281px){
+    @keyframes digitando {
+        from { width: 0; }
+        to { width: 20%; }
+    }
+}
+/*RESPONSIVIDADE 1367PX*/
+@media screen and (min-width: 1367px){
+    @keyframes digitando {
+        from { width: 0; }
+        to { width: 20%; }
+    }
+}
+/*RESPONSIVIDADE 1601PX*/
+@media screen and (min-width: 1601px){
+    .sobre-mim p {
+        font-size: 1.3rem;
+    }
+}

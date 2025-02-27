@@ -1,6 +1,7 @@
 .servicos {
     position: relative;
 }
+
 .servicos .titulo-servicos {
     margin-top: 5rem;
     font-size: 1.3rem;
@@ -8,7 +9,8 @@
     display: flex;
     justify-content: center;
 }
-.servicos .paragrafos-explicativos{
+
+.servicos .paragrafos-explicativos {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -18,27 +20,32 @@
     width: 100%;
     margin-top: 1rem;
 }
+
 .paragrafos-explicativos p {
     width: 100%;
 }
+
 .linha-separadora {
-    max-width: 250px;
+    min-width: 100%;
     position: relative;
     margin-top: 2rem;
-    
+
 }
+
 .linha-separadora .linha {
     width: 100%;
     height: 0.2rem;
     background-color: black;
     position: absolute;
 }
-.linha-separadora .spans{
+
+.linha-separadora .spans {
     font-size: 0.8rem;
     gap: 0.5rem;
     display: flex;
 }
-.servicos .sobre-titulos-servicos{
+
+.servicos .subtitulo-servicos {
     margin-top: 10rem;
     font-size: 1rem;
     font-weight: 700;
@@ -63,9 +70,10 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     flex-direction: column;
     border-radius: 1rem;
-    gap: 0.5rem;
+    gap: 1rem;
     background-color: #F5FFFA;
 }
+
 .box-s img {
     width: 100%;
     height: 100%;
@@ -73,18 +81,130 @@
     overflow: hidden;
     border-radius: 1rem;
 }
-.box-s  button{
+
+.box-s button {
     padding: 0.4rem 4rem;
     border-radius: 0.2rem;
     border: none;
-    background-color:  #0B610B;
+    background-color: #0B610B;
     color: #F5FFFA;
     cursor: pointer;
 }
+
 .box-s p {
     padding-bottom: 1rem;
 }
-.box-s :hover {
-    transition:  0.4s ease-in-out;
-    transform: scale(0.9)
+
+.box-servicos .box-s:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.678);
+    transform: translateY(-0.1rem) scale(1.01);
+    transition: 0.5s;
+}
+/*RESPONSIVIDADE 414PX*/
+@media screen and (min-width: 414px) {
+    .servicos .titulo-servicos {
+        font-size: 1.5rem;
+    }
+
+    .box-servicos .box-s {
+        width: 100%;
+    }
+
+    .box-s button {
+        padding: 0.5rem 5rem;
+    }
+    .servicos .subtitulo-servicos {
+        font-size: 1.2rem;
+    }
+}
+/*RESPONSIVIDADE 480PX*/
+@media screen and (min-width: 480px) {
+    .servicos .titulo-servicos {
+        font-size: 1.6rem;
+    }
+
+    .box-servicos .box-s {
+        width: 85%;
+    }
+
+    .box-s button {
+        padding: 0.5rem 6rem;
+    }
+    .servicos .subtitulo-servicos {
+        font-size: 1.4rem;
+    }
+}
+/*RESPONSIVIDADE 768PX*/
+@media screen and (min-width: 768px) {
+    .servicos .titulo-servicos {
+        font-size: 1.7rem;
+    }
+    .servicos .paragrafos-explicativos {
+        font-size: 1.3rem;
+    }
+    .linha-separadora .spans {
+        font-size: 1.3rem;
+        gap: 4rem;
+        display: flex;
+    }
+    .projetos .box-servicos {
+        justify-content: space-around;
+        gap: 1.5rem;
+    }
+    .box-servicos .box-s {
+        width: 45%;
+    }
+    .box-s  button{
+        padding: 0.4rem 5rem;
+    }
+}
+/*RESPONSIVIDADE 1025PX*/
+@media screen and (min-width: 1025px){
+    .servicos .titulo-servicos {
+        font-size: 1.8rem;
+    }
+    .servicos .subtitulo-servicos {
+        font-size: 1.7rem;
+    }
+}
+/*RESPONSIVIDADE 1281PX*/
+@media screen and (min-width: 1281px) {
+    .servicos .titulo-servicos {
+        font-size: 1.9rem;
+    }
+    .servicos .paragrafos-explicativos {
+        font-size: 1.5rem;
+    }
+    .linha-separadora .spans {
+        font-size: 1.5rem;
+        gap: 6rem;
+        margin: 0.1rem;
+    }
+    .servicos .subtitulo-servicos {
+        font-size: 1.8rem;
+    }
+    .box-servicos .box-s {
+        width: 30%;
+    }
+    .box-s  button{
+        padding: 0.5rem 5rem;
+    }
+}
+/*RESPONSIVIDADE 1367PX*/
+@media screen and (min-width: 1367px){
+    .servicos .titulo-servicos {
+        font-size: 2rem;
+    }
+    .servicos .paragrafos-explicativos {
+        font-size: 1.6rem;
+    }
+    .linha-separadora .spans {
+        margin: 0.2rem;
+    }
+    .servicos .subtitulo-servicos {
+        font-size: 2rem;
+    }
+    .box-servicos .box-s {
+        width: 31%;
+    }
 }
