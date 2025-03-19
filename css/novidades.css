@@ -1,0 +1,46 @@
+#novidades-arquitetura h2 {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+#novidades-arquitetura .novidades {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#novidades-arquitetura .links-novidades {
+    padding: 0.5rem 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+#novidades-arquitetura a {
+    font-size: 0.8rem;
+    color: #4a4a4a;
+    text-decoration: underline;
+}
+
+#novidades-arquitetura p:hover {
+    transition: 0.4s;
+    transform: scale(1.1)
+}
+
+@media screen and (min-width: 500px) {
+    #novidades-arquitetura a {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (min-width: 500px) {
+    #novidades-arquitetura a {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
